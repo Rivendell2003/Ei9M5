@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- El TextView para mostrar los resultados -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!--El  Botón 1 para filtrar los números -->
+    <Button
+        android:id="@+id/buttonFilterNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar Números"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- El Botón 2 para filtrar la lista con valores no nuloo -->
+    <Button
+        android:id="@+id/buttonFilterNonNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar No Nulos"
+        android:layout_below="@id/buttonFilterNumbers"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- El Botón 3 para ordenar la lista -->
+    <Button
+        android:id="@+id/buttonFilterSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordenar Lista"
+        android:layout_below="@id/buttonFilterNonNull"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
